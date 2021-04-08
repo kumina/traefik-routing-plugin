@@ -1,0 +1,16 @@
+# The name of your plugin as displayed in the Traefik Pilot web UI.
+displayName: Traefik routing plugin
+
+# For now, `middleware` is the only type available.
+type: middleware
+
+# The import path of your plugin.
+import: github.com/kumina/traefik-routing-plugin
+
+# A brief description of what your plugin is doing.
+summary: Proof of concept! See if we can bait Traefik so that we decide from a custom configuration where each request should go!
+
+# Test data the plugin will use to test itself on startup
+testData:
+  routes:
+    http.test.com: asd
